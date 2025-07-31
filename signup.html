@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up – Latte Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #001010, #000000);
+      font-family: 'Segoe UI', sans-serif;
+      color: #00ffee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .signup-box {
+      background: rgba(0, 255, 238, 0.08);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ffee;
+      border: 1px solid #00ffee;
+      width: 350px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #00ffee;
+      text-shadow: 0 0 5px #00ffee;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      background: #000;
+      color: #00ffee;
+      border: 1px solid #00ffee;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      background: #00ffee;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background: #00cccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-box">
+    <h1>Sign Up</h1>
+    <form action="/signup" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Create Account">
+    </form>
+  </div>
+</body>
+</html>
