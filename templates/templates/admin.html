@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel – Latte Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at center, #1a0000, #000000);
+      font-family: 'Courier New', monospace;
+      color: #ff3c3c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .admin-box {
+      background-color: rgba(30, 0, 0, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 25px #ff3c3c;
+      text-align: center;
+      width: 350px;
+    }
+    h1 {
+      text-shadow: 0 0 10px #ff3c3c;
+      margin-bottom: 20px;
+    }
+    .user-list {
+      text-align: left;
+    }
+    .user-item {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: rgba(255, 60, 60, 0.1);
+      border-left: 3px solid #ff3c3c;
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-box">
+    <h1>Admin Panel</h1>
+    <div class="user-list">
+      <div class="user-item">👤 User123 – Active</div>
+      <div class="user-item">👤 MeowMaster – Banned</div>
+      <div class="user-item">👤 Admin – Superuser</div>
+    </div>
+  </div>
+</body>
+</html>
