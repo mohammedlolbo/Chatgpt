@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login – Latte Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: #00ff99;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background: rgba(0, 255, 153, 0.1);
+      border: 1px solid #00ff99;
+      box-shadow: 0 0 20px #00ff99;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      background: black;
+      border: 1px solid #00ff99;
+      padding: 10px;
+      color: #00ff99;
+      margin: 10px 0;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background: #00ff99;
+      color: black;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00ff99;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #00ff99;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h1>Login</h1>
+    <form action="/login" method="post">
+      <input type="text" name="email" placeholder="E-Mail" required>
+      <input type="password" name="password" placeholder="Passwort" required>
+      <input type="submit" value="Einloggen">
+    </form>
+  </div>
+</body>
+</html>
