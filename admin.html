@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel – Latte Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .admin-box {
+      max-width: 600px;
+      margin: 80px auto;
+      padding: 30px;
+      background: rgba(0,0,0,0.3);
+      border: 2px solid #00ffff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ffff;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00ffff;
+    }
+
+    .log-box {
+      margin-top: 20px;
+      background: #111;
+      padding: 15px;
+      border-radius: 5px;
+      height: 200px;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+
+    .log-box p {
+      margin: 5px 0;
+      color: #0ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-box">
+    <h1>Admin Panel</h1>
+    <p>Hier kannst du alle aktiven Nutzer und Subscriptions verwalten.</p>
+    
+    <div class="log-box">
+      <p>[System] User 132 hat ein Abo gestartet.</p>
+      <p>[Admin] Neuer Test aktiviert.</p>
+      <p>[System] Zugriff verweigert: kein Abo</p>
+      <p>…</p>
+    </div>
+  </div>
+</body>
+</html>
