@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscriptions – Latte Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/matrix.js') }}" defer></script>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="content-box">
+        <h2>Choose your subscription</h2>
+        <p>Webmoney available: <strong>{{ user['webmoney'] }} €</strong></p>
+        <form method="POST">
+            <button type="submit" name="plan" value="month">Buy 1 Month (15 €)</button><br><br>
+            <button type="submit" name="plan" value="year">Buy 1 Year (85 €)</button>
+        </form>
+        <a href="{{ url_for('dashboard') }}"><button>Back to Dashboard</button></a>
+    </div>
+</body>
+</html>
