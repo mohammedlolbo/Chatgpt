@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard – Latte Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/matrix.js') }}" defer></script>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="content-box">
+        <h2>Welcome, {{ user['username'] }}</h2>
+        <p><strong>Webmoney:</strong> {{ user['webmoney'] }} €</p>
+        <p><strong>Subscription:</strong>
+            {% if has_sub %}
+                Active until {{ user['subscription_until'] }}
+            {% else %}
+                No active subscription
+            {% endif %}
+        </p>
+        <p class="notice">
+            <strong>Recharge Info:</strong><br>
+            Send the amount of money to <b>tomaschafyy</b> on PayPal with your username in the message and “family and friends”. Then wait 30–60 minutes.
+        </p>
+        <a href="{{ url_for('subscriptions') }}"><button>Buy Subscription</button></a>
+        <a href="{{ url_for('settings') }}"><button>Settings</button></a>
+        <a href="{{ url_for('logout') }}"><button>Logout</button></a>
+    </div>
+</body>
+</html>
