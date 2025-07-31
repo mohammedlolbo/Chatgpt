@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Courier New', monospace;
+  color: #00ffcc;
+  overflow: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.glow-box {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 20px #00ffcc;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 100px auto;
+  max-width: 600px;
+}
