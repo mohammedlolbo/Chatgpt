@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Latte Test – Send Meow</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/matrix.js') }}" defer></script>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="content-box">
+        <h1>Latte Test – Send Meow</h1>
+        {% if not subscription_active %}
+            <p class="notice">You need an active subscription to use this tool.</p>
+        {% else %}
+            <form method="POST">
+                <input type="text" name="target_url" placeholder="https://your-site.com" required>
+                <button type="submit">Run Latte Test</button>
+            </form>
+        {% endif %}
+        <p class="warning">You are only allowed to use this tool on websites you own. Illegal use is not allowed.</p>
+    </div>
+</body>
+</html>
