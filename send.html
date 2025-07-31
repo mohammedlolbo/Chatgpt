@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Run Latte Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #101010, #000000);
+      font-family: 'Segoe UI', sans-serif;
+      color: #33ffcc;
+    }
+
+    .tool-box {
+      max-width: 500px;
+      margin: 100px auto;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.4);
+      border: 2px solid #33ffcc;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #33ffcc;
+    }
+
+    h1 {
+      text-align: center;
+      color: #33ffcc;
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    input {
+      background: #111;
+      color: #33ffcc;
+    }
+
+    button {
+      background: #33ffcc;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #00ffaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="tool-box">
+    <h1>Run Latte Test</h1>
+    <input type="text" placeholder="Target IP">
+    <input type="number" placeholder="Port">
+    <input type="number" placeholder="Duration (sec)">
+    <button onclick="startLatte()">☕ Send Meow</button>
+  </div>
+
+  <script>
+    function startLatte() {
+      alert("Latte Test gestartet – Miauuu ☕🐾");
+    }
+  </script>
+</body>
+</html>
