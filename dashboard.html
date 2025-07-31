@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard – Latte Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at center, #2a003f, #000);
+      font-family: 'Segoe UI', sans-serif;
+      color: #d6aaff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .dashboard-box {
+      background-color: rgba(40, 0, 60, 0.85);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px #d6aaff;
+      width: 400px;
+      text-align: center;
+    }
+    h1 {
+      text-shadow: 0 0 10px #d6aaff;
+      margin-bottom: 25px;
+    }
+    .latte-btn {
+      background-color: #d6aaff;
+      color: #2a003f;
+      border: none;
+      padding: 12px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #d6aaff;
+      transition: 0.3s;
+    }
+    .latte-btn:hover {
+      box-shadow: 0 0 30px #e8ccff;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-box">
+    <h1>Welcome to Your Dashboard</h1>
+    <p>Status: ✅ Active Subscription</p>
+    <br>
+    <button class="latte-btn">☕ Run Latte Test</button>
+  </div>
+</body>
+</html>
